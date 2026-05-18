@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy: #0f1729;
+  --silver: #c0c5ce;
+  --gold: #d4af37;
+  --amber: #f5deb3;
+  --golden-yellow: #ffd700;
+}
+
+body {
+  @apply bg-white text-gray-900;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+.gradient-gold {
+  background: linear-gradient(135deg, var(--gold) 0%, var(--golden-yellow) 100%);
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, var(--gold) 0%, var(--golden-yellow) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.shadow-luxury {
+  box-shadow: 0 10px 40px rgba(212, 175, 55, 0.15);
+}
+
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 50px rgba(212, 175, 55, 0.25);
+}
